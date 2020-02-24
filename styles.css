@@ -1,130 +1,161 @@
-html {
-  background-image: url(IMG/bag.jpg);
-}
+
 body {
-  display: flex;
-  justify-content: center;
-}
-.general-container {
-  max-width: 1024px;
-  align-content: center;
-  display: flexbox;
-  padding-top: 100px;
-  padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/bg1.jpg);
 }
 .container {
-  background-color: #fdfdfd;
-  font-family: "Roboto Mono", monospace;
-  width: 100%;
-}
+    width: 1024px;
+    justify-content: center;
+    display: flex;
+    background-color: #fdfdfd;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
 
-.header {
-  display: flex;
-  background-color: #fdfdfd;
-  font-family: "Roboto Mono", monospace;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  
 }
+  .header {
+      width: 90%;
+      height: 10em;
+      display: flex;
+      background-color: #fdfdfd;
+      vertical-align: middle;
 
-h1 {
-  font-size: 48px;
-}
+  }
+  .about-me {
+    width: 90%;
+    text-align: justify;
+  }
 
-h1:hover {
-  font-size: 58px;
-  color: #ffcc00;
-}
-p{
-  padding-right: 50px;
-}
+  .about-me h2{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #e48400;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 
-.card {
-  width: 100%;
-  display: flex;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  border-top: #75cac3 solid 3px;
-}
+  h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h1:hover{
+    transform: scale(1.25);
+  }
 
-.title {
-  width: 40%;
-  font-size: 28px;
-  font-weight: bolder;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  padding-left: 10px;
-  color: #ffcc00;
-}
+  #contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .name-title {
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+  }
 
-.title:hover {
-  color: black;
-  font-size: 34px;
-}
-.card-content {
-  width: 100%;
-  display: flex;
-  padding-top: 15px;
-}
+  .content {
+    width: 90%;
+    display: flex;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space: normal;
 
-ul {
-  padding: 0%;
-}
+  }
+  
 
-li {
-  float: left;
-  margin: 10px;
-  list-style: none;
-  text-align: center;
-}
+  .col1 {
+    width: 35%;
+    margin-right: 50px;
+  }
+  
+  .col2 {
+    width: 65%;
+    margin-right: 10px;
 
-li:hover {
-  font-size: 32px;
-}
-.card2 {
-  width: 50%;
-  display: flex;
-  padding-bottom: 35px;
+  }
 
-  border-top: #75cac3 solid 3px;
-}
-#double-card {
-  display: flex;
-  width: 100%;
-}
+  .title{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #e48400;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .title:hover{
+    -webkit-transform:scale(1.25);
+  }
 
-.footer {
-  background-color: #46a0bb;
-  width: 100%;
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-  font-size: 12px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-#img {
-  width: 20%;
-  text-align: right;
-}
+  }
+  h2{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h3 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: underline;
+  }
 
-#name {
-  width: 50%;
-  text-align: center;
-  font-family: "Catamaran", sans-serif;
-  font-weight: bolder;
-}
+  .card-content{
+    flex-wrap: wrap;
+  }
+  .center {
+    text-align: center;
+  }
+ 
+  .checked {
+    color: orange;
+  }
+  .fa-star{
+    font-size: 10px;
+  }
+  .card-techs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .techs {
+    width: 100px;
+    height: 120px;
+  }
 
-#contact {
-  width: 30%;
-  text-align: left;
-  flex-wrap: wrap;
-}
+  .footer {
+    background-color: rgba(169, 169, 169, 0.315);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
+    padding-top: 35px;
+  }
+  
+  
+@media screen and (max-width: 555px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
 
-#logo {
-  width: 60px;
-  height: 60px;
-}
-
-#techs {
-  font-size: 24px;
+  .content {
+    flex-direction: column;
+  }
+  .col1 {
+    width: 100%;
+  }
+  .col2 {
+    width: 100%;
+  }
 }
